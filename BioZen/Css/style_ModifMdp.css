@@ -1,0 +1,49 @@
+
+.inputlabMdpo
+{
+margin-left: 22px;
+}
+
+.validerOMdp
+{
+    border-radius: 3px;
+   background-color: rgb(6, 250, 209);
+   border:none;
+   margin-left: 305px;
+margin-top:8px;
+width:155px;
+
+   
+}
+
+
+.validerOMdp:hover
+{
+    background-color: rgb(6, 250, 148);
+    width:205px; 
+    box-shadow: 10px 5px 5px rgb(68, 1, 68) ;
+    margin-left: 280px;
+
+}
+
+.validermailO
+{
+    border-radius: 3px;
+    background-color: rgb(6, 250, 209);
+    border:none;
+    margin-left: 285px;
+ margin-top:8px;
+ width:155px;
+}
+
+.validermailO:hover
+{
+    background-color: rgb(6, 250, 148);
+    width:205px; 
+    box-shadow: 10px 5px 5px rgb(68, 1, 68) ;
+    margin-left: 260px;
+}
+.formModif
+{
+    margin-left:20%;
+}

@@ -1,0 +1,129 @@
+@media (max-width: 600px) {
+    /* <-header css-> **/
+    .logo {
+        margin-left: 40%;
+    }
+    /*modifie l'icon du panier **/
+    .iconPan {
+        margin-top: 56px;
+        margin-right: 0px;
+        width: 34px;
+        height: auto;
+    }
+    /*modifie le bouton menu sandwich **/
+    .btnMenu {
+        display: block;
+        float: left;
+        padding: 12px 15px;
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-top: -120px;
+    }
+    #btnMenu2 {
+        display: none;
+        background-color: rgb(255, 244, 146);
+    }
+    /*modifie le menu **/
+    .sommaire {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1%;
+    }
+    /*modifie le menu **/
+    .acces {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1%;
+    }
+    /*animation a l'ouverture du menu**/
+    .ouvertureMenu {
+        animation: .5s ouvertureMenu ease-in forwards;
+        transition-delay: 0;
+    }
+    /* animation ouverture du menu **/
+    @keyframes ouvertureMenu {
+        from {
+            margin-left: -300px;
+        }
+        to {
+            margin-left: 0px;
+        }
+    }
+    /*animation a fermeture du menu**/
+    .fermetureMenu {
+        animation: 2s fermetureMenu ease-out forwards;
+        transition-delay: 0;
+    }
+    /* animation fermeture du menu **/
+    @keyframes fermetureMenu {
+        from {
+            margin-left: 0px;
+        }
+        to {
+            margin-left: -400px;
+            display: none;
+        }
+    }
+    /*modifie le menu **/
+    .menu {
+        margin-top: 22%;
+        display: none;
+        flex-direction: column;
+        border: 1px solid black;
+        border-radius: 2%;
+        width: 60%;
+        height: 100%;
+        justify-content: right;
+        text-align: center;
+        z-index: 9999;
+    }
+    /* bonton accueil, a propos , et actualités  **/
+    .btn {
+        margin-top: 16%;
+        border-bottom: 1px solid black;
+        margin-right: 0;
+    }
+    /*bouton de connexion **/
+    .btn-accs {
+        margin-top: 16%;
+        border-bottom: 1px solid black;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /* btn contact**/
+    .btn-co {
+        margin-top: 16%;
+        border-bottom: 1px solid black;
+        margin-left: 0;
+    }
+    /* text du panier**/
+    .txtpanier {
+        display: none;
+    }
+    /*aligne menu et bouton du menu **/
+    .menu-cpt {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    /**<--footer-->*/
+    footer,
+    .flex1 {
+        flex-direction: column;
+        font-size: 10px;
+    }
+    .flex1 {
+        padding: 10px 50px;
+    }
+    .flex2 {
+        padding: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo {
+        margin-left: 30%;
+    }
+}

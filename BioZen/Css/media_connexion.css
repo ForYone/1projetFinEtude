@@ -1,0 +1,33 @@
+@media(max-width:600px) {
+    ​ .modalConnexion {
+        position: absolute;
+        width: 80%;
+        margin-left: 10%;
+        height: 80vh;
+    }
+    .sousModalConnexion {
+        flex-direction: column;
+        width: 80%;
+    }
+    .titreConnexion {
+        margin-left: 25%;
+    }
+    .borderContact {
+        display: none;
+    }
+    .coformulaire {
+        margin-top: 2%;
+    }
+    #fermetureCo {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #coSalarie {
+        margin-top: 12%;
+    }
+    .mdpO {
+        margin-left: 25%;
+    }
+}

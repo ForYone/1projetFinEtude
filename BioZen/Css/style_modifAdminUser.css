@@ -1,0 +1,24 @@
+.formModif
+{
+    margin-top:25px;
+    margin-left:25%;
+    width:100%;
+  
+}
+.validerModifAdm
+{
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 7px;
+    background-color: rgb(6, 250, 209);
+      border:none;
+      width:85px;
+      margin-left: 265px;
+}
+.validerModifAdm:hover
+{
+    background-color: rgb(6, 250, 148);
+    width:165px; 
+    margin-left: 230px;
+    box-shadow: 10px 5px 5px rgb(90, 226, 250) ;
+}

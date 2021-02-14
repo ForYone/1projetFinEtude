@@ -1,0 +1,227 @@
+/***************Bon de commande*********************/
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgb(75, 74, 74);
+}
+
+.titreBDC h3 {
+    padding-left: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.print {
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 2px;
+    background-color: #FF5B8E;
+    color: white;
+}
+
+.BDC {
+    border: solid 1px rgb(75, 74, 74);
+    width: 70%;
+    height: auto;
+    margin: auto;
+    padding: 1% 4% 4% 4%;
+}
+
+.logoBdc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-content: center;*/
+}
+
+.enteteBDC {
+    display: flex;
+    flex-direction: row;
+}
+
+.enteteBDC p {
+    border: none;
+    padding: 5px;
+    max-height: 50px;
+}
+
+.adresse1 {
+    order: 1;
+}
+
+.enteteBDC {
+    order: 3;
+}
+
+.adresse1,
+.imgLogoBdc,
+.enteteBDC {
+    flex: 1 1 0;
+}
+
+.imgLogoBdc {
+    text-align: center;
+    order: 2;
+}
+
+.date {
+    margin-left: 20px;
+}
+
+.maj {
+    text-transform: uppercase;
+}
+
+.adresseBDC {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 0 30px 0;
+}
+
+.BDC table {
+    border-collapse: collapse;
+}
+
+.articleBDC th {
+    border-bottom: solid 1px rgb(75, 74, 74);
+}
+
+.violet {
+    color: #7030a0;
+}
+
+.adresse2 {
+    border: none;
+    padding: 10px;
+    /*max-height: 120px;*/
+    /*min-width: 250px;*/
+    margin-left: 36%;
+    flex-wrap: wrap;
+}
+
+.adresses p {
+    margin-top: 0;
+}
+
+.gras {
+    font-size: large;
+    font-weight: bold;
+}
+
+.articleBDC {
+    margin-bottom: 50px;
+    border-top: solid 1px rgb(75, 74, 74);
+}
+
+.totalBDC {
+    border-top: solid 1px rgb(160, 130, 130);
+}
+
+.articleBDC td,
+.articleBDC th,
+.totalBDC td,
+.totalBDC th {
+    width: 200px;
+    height: auto;
+    text-align: right;
+    padding: 5px;
+}
+
+
+/***************************AllBDC***********************/
+
+.allBdcContenu,
+.bdcAval {
+    width: 70%;
+    margin: auto;
+}
+
+.bdcAval {
+    border: solid 1px grey;
+    margin: 10px;
+}
+
+.btn-voir {
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.eltBdc {
+    width: 300px;
+    border-radius: 6px;
+    border: none
+}
+
+.eltBdc1 {
+    width: 50px;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+}
+
+.imgLogoBdc img {
+    width: 100px;
+}
+
+.violet p,
+.adresse2 {
+    flex: 1 1 1;
+}
+
+
+/*******BON DE COMMANDE**********/
+
+@media(max-width:1024px) {
+    .BDC {
+        border: none;
+        width: 100%;
+    }
+}
+
+@media(max-width:420px) {
+    .gras {
+        font-size: medium;
+    }
+    .date {
+        margin-left: 0px;
+    }
+    .container {
+        font-size: 10px;
+    }
+    .BDC {
+        width: 90%;
+    }
+    .logoBdc {
+        flex-direction: column;
+    }
+    .adresse1 {
+        order: 3;
+    }
+    .imgLogoBdc img {
+        width: 100px;
+    }
+    .imgLogoBdc {
+        order: 1;
+    }
+    .enteteBDC {
+        order: 2;
+    }
+}
+
+@media print {
+    header,
+    footer,
+    .titreBDC,
+    #accordionSidebar {
+        display: none !important;
+    }
+    .BDC {
+        border: none !important;
+        width: 100% !important;
+    }
+    .msgCom {
+        display: none !important;
+    }
+}

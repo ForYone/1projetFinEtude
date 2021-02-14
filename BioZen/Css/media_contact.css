@@ -1,0 +1,28 @@
+ @media (max-width: 600px) {
+     .modalContact {
+         width: 90%;
+         flex-direction: column;
+         position: absolute;
+         margin-left: 1%;
+     }
+     .contact {
+         width: 95%;
+     }
+     .border {
+         display: none;
+     }
+     ​ .map {
+         width: 98%;
+     }
+     ​ ​ .xtitre {
+         display: block;
+     }
+     .fm2 {
+         display: block;
+         float: right;
+         margin-top: 4px;
+         top: 0;
+         right: 0;
+         position: absolute;
+     }
+ }

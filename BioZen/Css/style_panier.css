@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex-panier {
+    border: 1px solid blue;
+    display: flex;
+}
+
+.panier-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #dddddd;
+}
+
+.panier-table td,
+.panier-table th:not(#th-vide) {
+    border-left: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.table-panier img {
+    width: 120px;
+}
+
+.table-MontantPanier {
+    width: 100%;
+}
+
+.table-MontantPanier td {
+    padding: 10px;
+}
+
+.table-MontantPanier td:not(.td-align) {
+    text-align: right;
+}
+
+.btn-cmd {
+    background-color: rgb(61, 212, 61);
+    width: 100px;
+    height: 50px;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.totale-panier {
+    font-family: arial, sans-serif;
+    float: right;
+    height: 100%;
+    margin-right: 30px;
+    padding: 10px;
+    border-bottom: 1px solid rgb(240, 232, 232);
+    border-left: 1px solid rgb(240, 232, 232);
+    border-right: 1px solid rgb(240, 232, 232);
+    box-shadow: 3px 3px 3px 3px rgb(209, 206, 206);
+}
+
+.font-montant {
+    font-size: 20px;
+}
+
+.table-panier {
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow-x: auto;
+}
+
+.table-panier tr:nth-child(even) {
+    background-color: rgb(235, 235, 235);
+}
+
+.sup-croix {
+    font-size: 30px;
+    float: left;
+    cursor: pointer;
+}
+
+.sup-croix:hover {
+    color: red;
+}

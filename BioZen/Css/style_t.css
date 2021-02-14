@@ -1,0 +1,663 @@
+/******Général******/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Arsenal-Bold';
+    src: url('../polices/arsenal/Arsenal-Bold.otf');
+    font-family: 'Arsenal-Regular';
+    src: url('../polices/arsenal/Arsenal-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Sofia-Regular';
+    src: url('../polices/sofia/Sofia-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../polices/montserrat/Montserrat-Regular.otf');
+}
+
+@font-face {
+    font-family: 'CaviarDream_BoldItalic';
+    src: url('../polices/caviar/CaviarDreams_BoldItalic.ttf');
+}
+
+
+/******Header******/
+
+#header-pageA {
+    background-color: rgb(2, 156, 2);
+    color: white;
+    border-radius: 3px;
+}
+
+
+/*logo + panier**/
+
+.logo {
+    margin: 0;
+}
+
+.marketing {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+/* text du panier**/
+
+.txtpanier {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+}
+
+
+/* icon panier**/
+
+.iconPan {
+    margin-right: 16px;
+    width: 24px;
+    height: auto;
+}
+
+
+/*icon + text**/
+
+.panier {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 100px;
+    /*padding-left:15%;*/
+}
+
+.logo {
+    width: 220px;
+    height: auto;
+}
+
+
+/* bouton du menu **/
+
+.btnMenu {
+    height: auto;
+    width: 60px;
+    display: none;
+}
+
+
+/* div menu **/
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 35px;
+}
+
+
+/** accueil, a propos , et actualités  */
+
+.sommaire {
+    width: 100%;
+    display: flex;
+    margin-left: 2%;
+    flex-direction: row;
+    margin-top: 1%;
+}
+
+
+/*text de la pub**/
+
+.txtpub {
+    /*margin: 1em auto 2em;*/
+    overflow: hidden;
+    color: white;
+}
+
+.txtpub a {
+    color: white;
+}
+
+
+/**block pub*/
+
+.pub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60px;
+    background: rgb(84, 107, 195);
+}
+
+
+/*accueil, a propos , et actualités **/
+
+.btn {
+    font-size: large;
+    margin-right: 2%;
+}
+
+
+/** bouton de connexion*/
+
+.btn-accs {
+    margin-right: 16%;
+    font-size: large;
+}
+
+
+/** bouton contact */
+
+.btn-co {
+    font-size: large;
+}
+
+
+/*header complet**/
+
+header {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+
+/**contact + connexion*/
+
+.acces {
+    display: flex;
+    flex-direction: row;
+    margin-right: 4%;
+    margin-top: 1%;
+}
+
+
+/*panier + premier text panier **/
+
+.pan {
+    display: flex;
+    flex-direction: row;
+    color: rgb(240, 89, 140);
+}
+
+
+/*text sous le panier**/
+
+.pp {
+    margin-top: 0;
+    font-size: 14px;
+    color: grey;
+}
+
+
+/*menu complet **/
+
+.menu {
+    border-bottom: 1px solid lightgrey;
+    height: 60px;
+}
+
+.menu a {
+    color: rgb(68, 67, 67);
+    font-family: Arsenal-Bold, sans-serif;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.bar-icon {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+/***************Bon de commande*********************/
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    ;
+    color: rgb(75, 74, 74);
+}
+
+.titreBDC h3 {
+    padding-left: 50px;
+    text-align: center;
+}
+
+.print {
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 2px;
+    background-color: #FF5B8E;
+    color: white;
+}
+
+.BDC {
+    border: solid 1px rgb(75, 74, 74);
+    width: 70%;
+    height: auto;
+    margin: auto;
+    padding: 1% 4% 4% 4%;
+}
+
+.logoBdc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-content: center;*/
+}
+
+.enteteBDC {
+    display: flex;
+    flex-direction: row;
+}
+
+.enteteBDC p {
+    border: none;
+    padding: 5px;
+    max-height: 50px;
+}
+
+.adresse1 {
+    order: 1;
+}
+
+.enteteBDC {
+    order: 3;
+}
+
+.adresse1,
+.imgLogoBdc,
+.enteteBDC {
+    flex: 1 1 0;
+}
+
+.imgLogoBdc {
+    text-align: center;
+    order: 2;
+}
+
+.date {
+    margin-left: 20px;
+}
+
+.maj {
+    text-transform: uppercase;
+}
+
+.adresseBDC {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 0 30px 0;
+}
+
+.BDC table {
+    border-collapse: collapse;
+}
+
+.articleBDC th {
+    border-bottom: solid 1px rgb(75, 74, 74);
+}
+
+.violet {
+    color: #7030a0;
+}
+
+.adresse2 {
+    border: none;
+    padding: 10px;
+    /*max-height: 120px;*/
+    /*min-width: 250px;*/
+    margin-left: 205px;
+    flex-wrap: wrap;
+}
+
+.adresses p {
+    margin-top: 0;
+}
+
+.gras {
+    font-size: large;
+    font-weight: bold;
+}
+
+.articleBDC {
+    margin-bottom: 50px;
+    border-top: solid 1px rgb(75, 74, 74);
+}
+
+.totalBDC {
+    border-top: solid 1px rgb(160, 130, 130);
+}
+
+.articleBDC td,
+.articleBDC th,
+.totalBDC td,
+.totalBDC th {
+    width: 200px;
+    height: auto;
+    text-align: right;
+    padding: 5px;
+}
+
+
+/***************************AllBDC***********************/
+
+.allBdcContenu,
+.bdcAval {
+    width: 70%;
+    margin: auto;
+}
+
+.bdcAval {
+    border: solid 1px grey;
+    margin: 10px;
+}
+
+.eltBdc {
+    width: 300px;
+    border-radius: 6px;
+    border: none
+}
+
+.eltBdc1 {
+    width: 50px;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+}
+
+.imgLogoBdc img {
+    width: 100px;
+}
+
+.violet p,
+.adresse2 {
+    flex: 1 1 1;
+}
+
+
+/*******BON DE COMMANDE**********/
+
+@media(max-width:1024px) {
+    .BDC {
+        border: none;
+        width: 100%;
+    }
+}
+
+@media(max-width:420px) {
+    .gras {
+        font-size: medium;
+    }
+    .date {
+        margin-left: 0px;
+    }
+    .container {
+        font-size: 10px;
+    }
+    .BDC {
+        width: 90%;
+    }
+    .logoBdc {
+        flex-direction: column;
+    }
+    .adresse1 {
+        order: 3;
+    }
+    .imgLogoBdc img {
+        width: 100px;
+    }
+    .imgLogoBdc {
+        order: 1;
+    }
+    .enteteBDC {
+        order: 2;
+    }
+}
+
+
+/********************Catalogue********************/
+
+.pageCat {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1;
+    color: rgb(75, 74, 74);
+}
+
+.liste_offres ul {
+    list-style: none;
+}
+
+.offre,
+.offre2 {
+    background-color: #f5eff5;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+.catContenu {
+    margin-right: 40px;
+}
+
+.offre_gch {
+    padding-left: 2%;
+}
+
+.titreCat {
+    color: rgb(75, 74, 74);
+}
+
+.btnStd {
+    border: none;
+    padding: 5px;
+    background-color: #FF5B8E;
+    border-radius: 2px;
+    color: white;
+}
+
+.liste_offres h3,
+.descriptionProd {
+    margin-left: 5%;
+}
+
+.descr {
+    margin: 7% 2% 7% 5%;
+    flex: 50%;
+}
+
+
+/*******************Modal Fiche Produit**********************/
+
+.overlay {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.ficheProduit {
+    background-color: white;
+    position: absolute;
+    max-width: 850px;
+    min-width: 600px;
+    border: solid 1px rgb(155, 152, 152);
+    border-radius: 2px;
+    /* z-index: 99; */
+}
+
+.fProd {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(75, 74, 74);
+}
+
+.btnFermer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: right;
+}
+
+.description {
+    height: auto;
+    margin: 7% 5% 7% 2%;
+    flex: 50%;
+}
+
+.descr {
+    margin: 7% 2% 7% 5%;
+    flex: 50%;
+}
+
+.titreFiche {
+    margin: 0;
+    font-size: x-large;
+}
+
+.message {
+    text-align: justify;
+    max-height: 200px;
+    max-width: 400px;
+    overflow: auto;
+    /*padding-bottom: 50px;*/
+}
+
+#qteMoins,
+#qtePlus {
+    width: 40px;
+}
+
+#qteInput {
+    width: 80px;
+}
+
+.ajouterPanier {
+    width: 170px;
+}
+
+#qteMoins,
+#qtePlus,
+#qteInput,
+.ajouterPanier {
+    border: none;
+    background-color: #FF5B8E;
+    color: white;
+    padding: 9px;
+    text-align: center;
+}
+
+
+/****Add Panier***/
+
+.addpanierMsg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgb(155, 152, 152);
+    ;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+}
+
+.msgPanier {
+    text-align: center;
+}
+
+
+/*********Modal Fiche Produit******************/
+
+@media(max-width:650px) {
+    .ficheProduit {
+        background-color: white;
+        position: absolute;
+        max-width: 300px;
+        min-width: 300px;
+        border: solid 1px rgb(155, 152, 152);
+        border-radius: 2px;
+        z-index: 99;
+    }
+    .fProd {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(75, 74, 74);
+    }
+    .fProd img {
+        margin-top: 20px;
+        max-width: 250px;
+        max-height: 250px;
+    }
+    .titreFiche {
+        margin: 0;
+        font-size: medium;
+    }
+    .message {
+        max-height: 200px;
+        max-width: 400px;
+    }
+    .addPanier {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .description {
+        text-align: center;
+    }
+}
+
+@media(max-width:1024px) {
+    /******Catalogue******/
+    .pageCat {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media print {
+    header,
+    footer,
+    .titreBDC {
+        display: none;
+    }
+    .BDC {
+        border: none;
+        width: 100%;
+    }
+    .msgCom {
+        display: none;
+    }
+}

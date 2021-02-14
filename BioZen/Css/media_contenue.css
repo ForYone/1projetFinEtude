@@ -1,0 +1,30 @@
+/******Responsive Contenue pzge d'accueil*************/
+
+@media(max-width:600px) {
+    .contenue-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .contenue {
+        height: 300px;
+        width: 300px;
+        margin-top: 20px;
+    }
+    .contenue:hover {
+        width: 380px;
+        height: 380px;
+    }
+    .img-catalogue {
+        width: 310px;
+        opacity: 0.5;
+    }
+    .div-img {
+        height: 220px;
+    }
+    .lien-style {
+        width: 200px;
+        font-size: 20px;
+    }
+}

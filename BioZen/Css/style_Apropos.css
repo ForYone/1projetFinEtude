@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Brush_Script_MT_Italic_V2;
+    src: url(../Font/Brush_Script_MT_Italic_V2.woff)
+}
+
+.div-video-presentation:not(#singnature) {
+    margin: auto;
+    width: 500px;
+    max-width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgb(240, 232, 232);
+    border-left: 1px solid rgb(240, 232, 232);
+    border-right: 1px solid rgb(240, 232, 232);
+    box-shadow: 3px 3px 3px 3px rgb(209, 206, 206);
+}
+
+.div-video-presentation h2 {
+    text-align: center;
+    font-style: italic;
+}
+
+#div-content {
+    font-style: italic;
+}
+
+#singnature {
+    text-align: right;
+    font-family: Brush_Script_MT_Italic_V2;
+    font-size: 30px;
+}
+
+#div-sign {
+    width: 100%;
+}

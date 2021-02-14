@@ -1,0 +1,87 @@
+@font-face {
+    font-family: CaviarDream_BoldItalic;
+    src: url(../polices/caviar/CaviarDreams_BoldItalic.ttf);
+    font-family: Sofia-Regular;
+    src: url(../polices/sofia/Sofia-Regular.otf)
+}
+
+.actuContainer {
+    width: 70%;
+    margin: auto;
+}
+
+.actuContainer h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 30px;
+    font-family: CaviarDream_BoldItalic, sans-serif;
+    color: #383838
+}
+
+.actu {
+    border-bottom: solid 1px #383838;
+    padding: 5%
+}
+
+.actuTitre,
+.actuPhoto,
+.actuVideo {
+    text-align: center;
+}
+
+.actuTitre h4 {
+    font-size: 30px;
+    font-family: Sofia-Regular, sans-serif;
+    color: #383838;
+    margin: 0;
+}
+
+.actuContainer p {
+    margin: 0;
+    color: gray;
+    padding-top: 20px;
+}
+
+.imgActu {
+    max-width: 640px;
+}
+
+.textActu {
+    text-align: center;
+    overflow: auto;
+}
+
+.textActu {
+    text-align: justify;
+}
+
+.date {
+    font-style: italic;
+}
+
+@media(max-width:768px) {
+    .imgActu,
+    video {
+        width: 480px;
+        height: auto;
+    }
+    .actuContainer {
+        width: 100%;
+    }
+}
+
+@media(max-width:420px) {
+    .imgActu,
+    video {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media(max-width:320px) {
+    .imgActu,
+    video {
+        width: 280px;
+        height: auto;
+    }
+}

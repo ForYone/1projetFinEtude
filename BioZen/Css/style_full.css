@@ -1,0 +1,572 @@
+/**<--header-->*/
+
+.sous-menu {
+    background-color: rgb(233, 221, 221);
+    display: none;
+    position: absolute;
+}
+
+.sous-menu a {
+    display: block;
+}
+
+.menu .bar-icon a:hover,
+.sous-menu a:hover {
+    background-color: rgb(95, 95, 235);
+    color: white;
+}
+
+
+/*<----------contact--->**/
+
+.iconPara {
+    display: flex;
+    flex-direction: row;
+}
+
+.infoContact {
+    display: flex;
+    flex-direction: column;
+}
+
+.modalContact {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: rgb(243, 243, 243);
+    position: fixed;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 20%;
+    border: 2px solid black;
+    width: 60%;
+    border-radius: 22px;
+    top: 25px;
+    z-index: 99999;
+    padding: 10px;
+}
+
+.border {
+    margin-top: 14%;
+    height: 25vh;
+    justify-content: center;
+    border-left: 2px solid rgb(0, 0, 0);
+}
+
+.contact {
+    width: 42%;
+}
+
+.localisation {
+    margin-left: 3%;
+}
+
+.hrlocalisation {
+    margin-top: -2%;
+    width: 35px;
+    margin-left: 2px;
+}
+
+.hrContact {
+    margin-top: -2%;
+    width: 35px;
+    margin-left: 2px;
+}
+
+.textC {
+    margin-top: 15px;
+}
+
+.titreContact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    white-space: nowrap
+}
+
+.iconPara {
+    margin-top: -25px;
+    margin-left: 3px;
+    padding-top: 6px;
+}
+
+.iconPara i {
+    margin-right: 2%;
+}
+
+.fm2 {
+    margin-top: -10px;
+    margin-left: 110px !important;
+}
+
+
+/* modification du mdp**/
+
+.modifMdp {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid black;
+}
+
+.profilMdp {
+    display: flex;
+    flex-direction: row;
+}
+
+.formalign {
+    margin-left: 11%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mdpM {
+    margin-left: 4%;
+}
+
+.mdpmodif {
+    width: 310px !important;
+    border-radius: 22px;
+}
+
+.validerprofil {
+    margin-top: 35px;
+    display: block;
+    background: none;
+    border: none;
+    float: right;
+    margin-right: 75px;
+}
+
+.inputlab {
+    display: flex;
+    padding-top: 38px;
+    flex-direction: row;
+}
+
+.labelmdp {
+    white-space: nowrap
+}
+
+.eepI {
+    margin-left: 12%;
+    margin-bottom: -5%;
+    position: absolute;
+}
+
+#villeError {
+    margin-left: 15%;
+}
+
+#cpError {
+    margin-left: -10%;
+}
+
+
+/*<----formulaire de connexion------------------------------------------------------------------------------------------->**/
+
+.titreConnexion {
+    margin-left: 200px;
+}
+
+.xtitre {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fermetureModal {
+    width: 5px;
+    margin-right: 12px;
+}
+
+.fermetureModal:hover {
+    color: red;
+}
+
+.modalConnexion {
+    margin-bottom: auto;
+    background-color: #FFF3FE;
+    position: fixed;
+    top: 150px;
+    display: none;
+    border: 2px solid black;
+    border-radius: 22px;
+    width: 42%;
+    margin-left: 30%;
+    height: 300px;
+    z-index: 999999;
+}
+
+.sousModalConnexion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.coformulaire {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    width: 100%;
+}
+
+.borderContact {
+    margin-top: 6%;
+    height: 13vh;
+    justify-content: center;
+    border-left: 2px solid black;
+    margin-left: 70px;
+    margin-right: 50px;
+}
+
+.champsforms {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputco {
+    border-radius: 22px;
+    width: 100%;
+    padding: 5px;
+}
+
+.passwordco {
+    margin-top: 19px;
+}
+
+.paraentreprise {
+    white-space: nowrap
+}
+
+.validerCo {
+    display: block;
+    width: 150px;
+    margin-left: 2%;
+    margin-top: 10px;
+    justify-content: center;
+    border: none;
+    background-color: rgb(6, 250, 209);
+    border-radius: 5%;
+}
+
+.nomCo {
+    width: 100%;
+    height: 30px;
+}
+
+.validerCo:hover {
+    background-color: rgb(6, 250, 148);
+    box-shadow: 10px 5px 5px rgb(68, 1, 68);
+}
+
+.pInscription {
+    white-space: nowrap;
+    margin-left: 14px;
+}
+
+.mdpO {
+    margin-top: 8%;
+    margin-left: 5%;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+
+/*<-----inscription----->**/
+
+.titreInscri {
+    display: block;
+    text-align: center;
+}
+
+.formInscri {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blockGauche {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.blockDroit {
+    display: flex;
+    flex-direction: column;
+    margin-right: 130px;
+}
+
+.champInscri {
+    width: 200px;
+    border-radius: 22px;
+}
+
+.champsInscri {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: row;
+}
+
+label:not(.qte-eep) {
+    display: block;
+    width: 200px;
+    float: left;
+}
+
+.validerinscri {
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 37px;
+    background-color: rgb(6, 250, 209);
+    border: none;
+    width: 85px;
+    margin-left: 300px;
+}
+
+.validerinscri:hover {
+    background-color: rgb(6, 250, 148);
+    width: 145px;
+    margin-left: 250px;
+    box-shadow: 10px 5px 5px rgb(90, 226, 250);
+}
+
+
+/*profil**/
+
+.voirProfil {
+    width: 45%;
+}
+
+.titreProfil {
+    margin-left: 22px;
+    text-align: center
+}
+
+.pProfil {
+    font-size: 16px;
+    margin-left: 3%;
+    margin-top: 54px;
+    font-family: Arial;
+}
+
+
+/* modification du mdp**/
+
+.modifMdp {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid black;
+}
+
+.profilMdp {
+    display: flex;
+    flex-direction: row;
+}
+
+.formalign {
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mdpmodif {
+    width: 310px !important;
+    border-radius: 22px;
+}
+
+.validerprofil {
+    border-radius: 3px;
+    margin-top: 35px;
+    display: block;
+    background: none;
+    border: none;
+    float: right;
+    margin-right: 75px;
+    background-color: rgb(6, 250, 209);
+}
+
+.validerprofil:hover {
+    background-color: rgb(6, 250, 148);
+    width: 205px;
+    box-shadow: 10px 5px 5px rgb(68, 1, 68);
+    margin-right: 35px;
+}
+
+.inputlab {
+    display: flex;
+    padding-top: 38px;
+    flex-direction: row;
+}
+
+.labelmdp {
+    white-space: nowrap
+}
+
+
+/*Responsive Form inscription*/
+
+@media (max-width: 600px) {
+    .formInscri {
+        width: 100%;
+        flex-direction: column;
+    }
+    .blockDroit {
+        margin-right: 0px;
+        margin-left: 1%;
+    }
+    .blockGauche {
+        margin-left: 1%;
+    }
+    .validerinscri {
+        margin-left: 10%;
+        width: 75%;
+    }
+    .champsInscri {
+        flex-direction: column;
+    }
+    .champInscri {
+        width: 98%;
+    }
+}
+
+
+/*REsponsive connexion**/
+
+@media(max-width: 900px) {
+    .modalConnexion {
+        position: absolute;
+        width: 80%;
+        margin-left: 10%;
+        height: 520px;
+        max-height: 800px;
+    }
+    .sousModalConnexion {
+        flex-direction: column;
+        width: 70%;
+        margin-left: 5%;
+    }
+    .titreConnexion {
+        margin-left: 40%;
+    }
+    .borderContact {
+        display: none;
+    }
+    .coformulaire {
+        margin-top: 2%;
+    }
+    #fermetureCo {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #coSalarie {
+        margin-top: 12%;
+    }
+    .mdpO {
+        text-align: center;
+        margin-left: 15%;
+    }
+    .validerCo {
+        width: 30%;
+        margin-left: 45%;
+    }
+    .pInscription {
+        text-align: center;
+        margin-left: 15%;
+    }
+}
+
+@media(max-width: 600px) {
+    .titreConnexion {
+        margin-left: 25%;
+    }
+}
+
+
+/*responsive contact**/
+
+@media (max-width: 600px) {
+    .modalContact {
+        width: 90%;
+        flex-direction: column;
+        position: absolute;
+        margin-left: 1%;
+    }
+    .contact {
+        width: 95%;
+    }
+    .border {
+        display: none;
+    }
+    .map {
+        width: 98%;
+    }
+    .xtitre {
+        display: block;
+    }
+    .fm2 {
+        display: block;
+        float: right;
+        margin-top: 4px;
+        top: 0;
+        right: 0;
+        position: absolute;
+    }
+}
+
+@media (max-width: 800px) {
+    .fm2 {
+        display: block;
+        float: right;
+        margin-top: 6px;
+        top: 0;
+        right: 0;
+        position: absolute;
+    }
+    .map {
+        width: 90%;
+    }
+}
+
+
+/**profil responsive*/
+
+@media (max-width: 600px) {
+    .profilMdp {
+        flex-direction: column;
+    }
+    .voirProfil {
+        width: 100%;
+        border-bottom: 1px solid black
+    }
+    .pProfil {
+        font-size: 16px;
+    }
+    .modifMdp {
+        width: 100%;
+    }
+    .inputlab {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: 16px;
+    }
+    .mdpmodif {
+        width: 80%;
+        margin-left: 0;
+    }
+    .modifMdp {
+        margin-top: 5%;
+        border-left: none;
+    }
+    .validerprofil {
+        float: none;
+        margin-left: 35%;
+    }
+}

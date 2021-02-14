@@ -1,0 +1,13 @@
+@media (max-width: 640px) {
+    .fo,
+    .flex1 {
+        flex-direction: column;
+        font-size: 10px;
+    }
+    .flex1 {
+        padding: 10px 50px;
+    }
+    .flex2 {
+        padding: 0;
+    }
+}

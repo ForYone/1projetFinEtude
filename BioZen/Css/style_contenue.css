@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+.contenue-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contenue {
+    background-color: rgba(236, 225, 225, 0.9);
+    text-align: center;
+    height: 500px;
+    width: 500px;
+    border-radius: 3px;
+    font-family: garamond;
+}
+
+.lien-style {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    background-color: rgb(139, 32, 226);
+    width: 450px;
+    border-radius: 8px;
+    font-family: garamond;
+    font-size: 40px;
+    padding: 10px;
+    position: relative;
+}
+
+.lien-style:hover {
+    background-color: rgb(233, 123, 169);
+    color: white;
+    box-shadow: 10px 10px 2px 2px rgb(37, 36, 36);
+    transition: 0.5s;
+}
+
+.lien-style:active {
+    box-shadow: 0px 0px 4px 4px rgb(37, 36, 36);
+    transition: 2s;
+}
+
+.contenue:hover {
+    width: 550px;
+    height: 550px;
+    background-color: rgba(212, 160, 255, 0.9);
+    transition: 1.5s;
+    box-shadow: 1px 1px 3px 3px rgb(110, 107, 107);
+    border-radius: 20px;
+}
+
+.img-catalogue {
+    width: 500px;
+    opacity: 0.5;
+}
+
+.div-img {
+    height: 350px;
+}
+
+.AdminTablauArticle {
+    max-height: 700px;
+    overflow-y: auto;
+}
+
+.admin-voirList {
+    margin-top: 15px;
+}

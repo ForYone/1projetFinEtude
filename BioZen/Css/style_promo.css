@@ -1,0 +1,228 @@
+/**<----Promotion----->**/
+
+.voirPromo {
+    border: none;
+    background: none;
+}
+
+.titrePromotion {
+    font-family: sans-serif;
+    line-height: 1.5em;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgb(255, 240, 244);
+    height: 9%;
+    width: 100%;
+    display: block;
+    border: 2px dotted;
+}
+
+#fermeturePromo {
+    background: none;
+    border: none;
+    left: 0;
+}
+
+.promotion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 45%;
+    margin-top: 4%;
+    margin-left: 15%;
+    height: 120px;
+    grid-column-gap: 10%;
+}
+
+.imgPromos {
+    width: 110px;
+    height: auto;
+}
+
+
+/**<--Modal Promotion---->**/
+
+.prix_voir {
+    display: flex;
+    flex-direction: row;
+}
+
+.unePromo {
+    height: 70%;
+    width: 400px;
+    background-color: rgba(228, 226, 226, 0.849);
+    box-shadow: 10px 5px 5px rgb(255, 203, 255);
+    display: flex;
+    flex-direction: row
+}
+
+.voirLaPromo {
+    border-radius: 3px;
+    background-color: rgb(255, 203, 203);
+    border: none
+}
+
+.voirLaPromo:hover {
+    background-color: rgb(255, 108, 108);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    border: none
+}
+
+.titreModP {
+    margin-top: 3%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.npPromo {
+    display: flex;
+    flex-direction: column;
+}
+
+.descriptArticle {
+    overflow: auto;
+    max-height: 290px;
+    width: 315px;
+}
+
+.Propmo {
+    Margin-top: 1%;
+    margin-bottom: 8%;
+}
+
+.qtéArticle {
+    height: 10px;
+    width: 105px;
+    text-align: center;
+}
+
+.buttonArtc {
+    margin-left: 3px;
+    margin-right: 4px;
+    text-align: center;
+    width: 15px;
+    color: white;
+    background: rgb(39, 39, 39);
+    margin-top: 8%;
+}
+
+.inputartc {
+    width: 45px;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.nbrArticle {
+    display: flex;
+    flex-direction: row;
+    margin-left: 8%;
+}
+
+.modalePromo {
+    border-radius: 4%;
+    background: rgb(219, 199, 247);
+    margin-top: -350px;
+    margin-left: 30%;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 520px;
+    z-index: 999;
+    max-height: 650px;
+    color: black;
+}
+
+.TP_descrip {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.photo_descript {
+    display: flex;
+    flex-direction: row;
+}
+
+.imgPromo {
+    width: 170px;
+    height: 200px;
+    margin-right: 20px;
+}
+
+.imgForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#fermeturePromo {
+    font-size: 24px;
+    display: block;
+    float: left;
+    color: black;
+    margin-left: 1%;
+}
+
+#fermeturePromo:hover {
+    color: red;
+}
+
+.fermTitreM {
+    height: 70px;
+    border-bottom: 1px solid white;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.npPromo {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.prixPromo {
+    font-weight: bold;
+}
+
+.validPromo {
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    background-color: blueviolet;
+    border: none;
+}
+
+.validPromo:hover {
+    width: 215px;
+    box-shadow: 10px 10px 10px rgb(124, 27, 27);
+    background-color: pink;
+    border: none;
+}
+
+
+/*Responsive*/
+
+@media (max-width: 600px) {
+    .promotion {
+        width: 100%;
+        margin-left: 2%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .unePromo {
+        width: 90%;
+        height: 90%;
+    }
+    .modalePromo {
+        max-height: 80vh;
+        margin-left: 2px;
+        width: 98%;
+    }
+    .descriptArticle {
+        margin-top: 10%;
+        width: 95%;
+    }
+    .validPromo {
+        margin-top: 10%;
+        width: 95%;
+        margin-right: 20px;
+    }
+}

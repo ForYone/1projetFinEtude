@@ -1,0 +1,255 @@
+/******Header******/
+
+@media (max-width: 375px) {
+    .menu {
+        height: 90vh;
+        width: 60%;
+    }
+}
+
+@media (max-width: 800px) {
+    .panier {
+        right: 35px;
+        top: 45px;
+    }
+    /* <-header css-> **/
+    /*.logo{ 
+            margin-left:40%;
+        }
+    */
+    /*modifie l'icon du panier **/
+    .iconPan {
+        margin-top: 56px;
+        margin-right: 0px;
+        width: 34px;
+        height: auto;
+    }
+    /*modifie le bouton menu sandwich **/
+    .btnMenu {
+        display: block;
+        float: left;
+        padding: 12px 15px;
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-top: -105px;
+    }
+    #btnMenu2 {
+        display: none;
+        background-color: rgb(255, 244, 146);
+    }
+    /*modifie le menu **/
+    .sommaire {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1%;
+    }
+    /*modifie le menu **/
+    .acces {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1%;
+    }
+    /*animation a l'ouverture du menu**/
+    .ouvertureMenu {
+        animation: .5s ouvertureMenu ease-in forwards;
+        transition-delay: 0;
+    }
+    /* animation ouverture du menu **/
+    @keyframes ouvertureMenu {
+        from {
+            margin-left: -300px;
+        }
+        to {
+            margin-left: 0px;
+        }
+    }
+    /*animation a fermeture du menu**/
+    .fermetureMenu {
+        animation: 2s fermetureMenu ease-out forwards;
+        transition-delay: 0;
+    }
+    /* animation fermeture du menu **/
+    @keyframes fermetureMenu {
+        from {
+            margin-left: 0px;
+        }
+        to {
+            margin-left: -600px;
+            display: none;
+        }
+    }
+    /*modifie le menu **/
+    .menu .bar-icon a {
+        font-size: 15px;
+        color: white;
+    }
+    .menu {
+        margin-top: 20px;
+        display: none;
+        flex-direction: column;
+        border: none;
+        height: 100%;
+        width: 60%;
+        justify-content: right;
+        text-align: center;
+        background: rgb(54, 54, 54);
+        z-index: 5;
+    }
+    /* bonton accueil, a propos , et actualités  **/
+    .btn {
+        margin-top: 16%;
+        margin-right: 0;
+    }
+    /*bouton de connexion **/
+    .btn-accs {
+        margin-top: 16%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /* btn contact**/
+    .btn-co {
+        margin-top: 16%;
+        margin-left: 0;
+    }
+    /* text du panier**/
+    .txtpanier {
+        display: none;
+    }
+    /*aligne menu et bouton du menu **/
+    .menu-cpt {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* @media (max-width: 400px) 
+    {
+        .logo{
+           
+            margin-left:30%;
+        
+        }
+    }*/
+
+
+/******Accueil******/
+
+@media(max-width:768px) {
+    .flex1 {
+        padding-left: 5px;
+    }
+    .flex2 {
+        padding: 25px 15px 25px 0;
+    }
+}
+
+@media(max-width:1024px) {
+    /******Footer******/
+    .flex1 {
+        padding-left: 10px;
+    }
+    .flex2 {
+        padding: 35px 25px 35px 0;
+    }
+    /******Catalogue******/
+    .pageCat {
+        display: flex;
+        flex-direction: column;
+    }
+    .imgActu {
+        width: 300px;
+        height: auto;
+    }
+}
+
+
+/*********Modal Fiche Produit******************/
+
+@media(max-width:650px) {
+    .ficheProduit {
+        background-color: white;
+        position: absolute;
+        /*top: 200px;
+    right: 30px;*/
+        max-width: 300px;
+        min-width: 300px;
+        border: solid 1px rgb(155, 152, 152);
+        border-radius: 2px;
+        z-index: 99;
+    }
+    .fProd {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(75, 74, 74);
+    }
+    img.description {
+        margin-top: 20px;
+        max-width: 250px;
+        max-height: 250px;
+    }
+    .titreFiche {
+        margin: 0;
+        font-size: medium;
+    }
+    .message {
+        max-height: 200px;
+        max-width: 400px;
+    }
+    .addPanier {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+@media(max-width:600px) {
+    /******Footer******/
+    footer,
+    .flex1 {
+        flex-direction: column;
+        font-size: 10px;
+    }
+    .flex1 {
+        padding: 10px 50px;
+    }
+    .flex2 {
+        padding: 0;
+    }
+}
+
+
+/*******BON DE COMMANDE**********/
+
+@media(max-width:420px) {
+    .container {
+        font-size: 10px;
+    }
+    .BDC {
+        width: 90%;
+    }
+    .imgActu {
+        width: 160px;
+        height: auto;
+    }
+}
+
+@media print {
+    header,
+    footer,
+    .titreBDC {
+        display: none;
+    }
+    .BDC {
+        border: none;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding: 1% 4% 4% 4%;
+    }
+}
